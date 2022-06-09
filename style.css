@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  /*(paragraphs)*/
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  background-color: var(--veryLightGray);
+}
+
+.padre {
+  /* outline: 2px solid red; */
+  height: 1326px;
+  width: 326px;
+  margin: 90px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hijo {
+  /* outline: 1px solid black; */
+  height: 442px;
+  width: auto;
+  padding: 40px 50px;
+}
+
+.hijo:nth-child(1) {
+  background-color: var(--brightOrange);
+}
+
+.hijo:nth-child(2) {
+  background-color: var(--darkCyan);
+}
+
+.hijo:nth-child(3) {
+  background-color: var(--veryDarkCyan);
+}
+
+.icono,
+.titulo,
+.descripcion {
+  box-sizing: content-box;
+  padding-bottom: 30px;
+}
+
+.icono {
+  height: 40px;
+  width: auto;
+  background-repeat: no-repeat;
+  /* padding-bottom: 30px; */
+  /* padding-bottom: 60px; */
+}
+
+.sedanIco {
+  background-image: url(/images/icon-sedans.svg);
+}
+
+.suvIco {
+  background-image: url(/images/icon-suvs.svg);
+}
+
+.luxuryIco {
+  background-image: url(/images/icon-luxury.svg);
+}
+
+.titulo {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 36px;
+  color: var(--veryLightGray);
+  text-transform: uppercase;
+  /* padding-bottom: 30px; */
+}
+
+.descripcion {
+  color: var(--transparentWhite);
+  line-height: 24px;
+  /* padding-bottom: 30px; */
+}
+
+.infoBtn {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--veryLightGray);
+  border-radius: 24px;
+  border: none;
+  font-size: 15px;
+  font-weight: 900;
+  height: 50px;
+  width: 150px;
+  border: 3px solid var(--veryLightGray);
+}
+
+.primeroBtn {
+  color: var(--brightOrange);
+}
+
+.segundoBtn {
+  color: var(--darkCyan);
+}
+
+.terceroBtn {
+  color: var(--veryDarkCyan);
+}
+
+.infoBtn:hover {
+  color: var(--veryLightGray);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .padre {
+    display: flex;
+    height: 500px;
+    width: 921px;
+  }
+
+  .hijo {
+    height: 500px;
+    width: 308px;
+    padding: 50px 50px 40px 48px;
+  }
+
+  .descripcion {
+    padding-bottom: 75px;
+  }
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
