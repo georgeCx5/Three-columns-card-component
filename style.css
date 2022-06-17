@@ -66,15 +66,15 @@ body {
 }
 
 .sedanIco {
-  background-image: url(/images/icon-sedans.svg);
+  background-image: url(./images/icon-sedans.svg);
 }
 
 .suvIco {
-  background-image: url(/images/icon-suvs.svg);
+  background-image: url(./images/icon-suvs.svg);
 }
 
 .luxuryIco {
-  background-image: url(/images/icon-luxury.svg);
+  background-image: url(./images/icon-luxury.svg);
 }
 
 .titulo {
